@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Calculator</title>
+  <link href="style.css" rel="stylesheet">
+</head>
+<body> 
+    <div id="calculator" role="application">
+      <!-- Screen -->
+      <div class="top">
+        <div class="screen" aria-labelledby="displayScreen"></div>
+      </div>
+
+      <div class="keys" aria-labelledby="inputKeys">
+        <!-- operators and other keys -->
+        <span tabindex="0" onclick="set_value('7')">7</span>
+        <span tabindex="0" onclick="set_value('8')">8</span>
+        <span tabindex="0" onclick="set_value('9')">9</span>
+        <span tabindex="0" class="operator" onclick="set_value('+')">+</span>
+        <span tabindex="0" onclick="set_value('4')">4</span>
+        <span tabindex="0" onclick="set_value('5')">5</span>
+        <span tabindex="0" onclick="set_value('6')">6</span>
+        <span tabindex="0" class="operator" onclick="set_value('-')">-</span>
+        <span tabindex="0" onclick="set_value('1')">1</span>
+        <span tabindex="0" onclick="set_value('2')">2</span>
+        <span tabindex="0" onclick="set_value('3')">3</span>
+        <span tabindex="0" class="operator" onclick="set_value('*')">x</span>
+        <span tabindex="0" class="clear" onclick="all_delete()">C</span>
+        <span tabindex="0" onclick="set_value('0')">0</span>
+        <span tabindex="0" onclick="set_value('.')">.</span>
+        <span tabindex="0" class="operator" onclick="set_value('/')">÷</span>
+        <span tabindex="0" class="eval" onclick="equal()">=</span>
+        <span tabindex="0" class="operator" onclick="set_value('^')">^</span>
+      </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
